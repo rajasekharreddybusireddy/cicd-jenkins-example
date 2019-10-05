@@ -16,12 +16,12 @@ pipeline {
             steps {
 
                 withCredentials([[$class          : 'UsernamePasswordMultiBinding',
-                                  credentialsId   : 'PCF_LOGIN',
+                                  credentialsId   : '119fdcf4-ba04-497a-b01a-bf4537cbe36a',
                                   usernameVariable: 'USERNAME',
                                   passwordVariable: 'PASSWORD']]) {
 
-                    sh '/usr/local/bin/cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
-                    sh '/usr/local/bin/cf push'
+                    sh 'cf login -a http://api.run.pivotal.io -u $USERNAME -p $PASSWORD'
+                    sh 'cf push'
                 }
             }
 
