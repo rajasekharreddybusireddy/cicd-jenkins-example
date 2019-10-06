@@ -1,4 +1,4 @@
-package com.techprimers.jenkins.cicdjenkinsexample;
+package com.blogspot.javabyrajasekhar.jenkins.cicdjenkinsexample;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
