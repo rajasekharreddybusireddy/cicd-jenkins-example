@@ -1,6 +1,6 @@
 ---
 applications:
-- name: cicd-jenkins-example
+- name: cicd-jenkins
   instances: 1
   memory: 800m
   domain : cfapps.io
